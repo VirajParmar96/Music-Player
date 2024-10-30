@@ -1,3 +1,3 @@
 # Music-Player
-simple music player/n
+simple music player 
 (please start with index.html)
