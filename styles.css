@@ -1,0 +1,114 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('mainbg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.player {
+  background-color: rgba(254, 250, 224, 0.216); /* Adding a semi-transparent background color */
+  backdrop-filter: blur(10px); /* Applying the blur effect */
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+.details {
+  margin-bottom: 20px;
+}
+
+.track-art {
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15%;
+  height: 250px;
+  width: 250px;
+  margin: 0 auto 20px;
+}
+
+.track-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.track-artist {
+  font-size: 18px;
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.playpause-track, .prev-track, .next-track {
+  cursor: pointer;
+  padding: 15px;
+  color: black;
+  transition: color 0.3s;
+}
+
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  color: black;
+}
+
+.slider_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  width: 70%;
+  background: #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.seek_slider::-webkit-slider-thumb, 
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.seek_slider:hover, .volume_slider:hover {
+  background: black;
+}
+
+.current-time, .total-duration {
+  font-size: 12px;
+  color: black;
+}
+
+.fa-volume-down, .fa-volume-up {
+  color: black;
+  padding: 5px;
+}
+
+.now-playing {
+  font-size: 14px;
+  color: black;
+}
